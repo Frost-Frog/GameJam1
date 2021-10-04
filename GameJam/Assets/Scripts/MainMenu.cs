@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void PlayAgain()
     {
         
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("Level1");
         Time.timeScale = 1;
         enabled = true;
     }
