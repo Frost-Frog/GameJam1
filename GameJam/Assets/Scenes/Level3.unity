@@ -510,6 +510,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 289.74
       objectReference: {fileID: 0}
+    - target: {fileID: 888227575789540872, guid: 52016caf33b137743b26a93065f9d201, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 888227575789540872, guid: 52016caf33b137743b26a93065f9d201, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 888227575789540872, guid: 52016caf33b137743b26a93065f9d201, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 368917188}
+    - target: {fileID: 888227575789540872, guid: 52016caf33b137743b26a93065f9d201, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 888227575789540872, guid: 52016caf33b137743b26a93065f9d201, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 888227575789540872, guid: 52016caf33b137743b26a93065f9d201, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 888227575789540872, guid: 52016caf33b137743b26a93065f9d201, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 888227575789540873, guid: 52016caf33b137743b26a93065f9d201, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.7

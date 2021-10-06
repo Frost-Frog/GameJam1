@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 94
+  controlID: 42
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 103
+  controlID: 43
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 104
+  controlID: 44
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -513,7 +513,7 @@ MonoBehaviour:
       oldMaxSizes: 
       oldSplitSize: 0
     m_HorizontalSplitter:
-      ID: 4591
+      ID: 1589
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes:
@@ -593,8 +593,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a570000
-    m_LastClickedID: 22362
+    m_SelectedIDs: 60500000
+    m_LastClickedID: 20576
     m_ExpandedIDs: 000000004a5000004c5000004e50000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -746,7 +746,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4c4fffffc24fffff5451ffffc052ffff9c53ffff6254ffff7254ffffbc59ffffde5cffff4669ffffd06dffffa671ffffa072ffff0074ffffca75ffff3478ffff027affff787affff7e7affffe27bffffb67cffff6c7dffff787dffff8687ffff4c91ffff8891ffff729effff969effff14a0ffff68a9ffffd2a9ffff3ebdfffff0c7ffff5ac8ffffcce8ffff42e9ffffd0eaffff38ecffff10edffffd2edffffdeedffff34f4ffffaaf4ffff38f6ffffa0f7ffff78f8ffff3af9ffff46f9ffff40fbfffff4ffffff94770000e2770000fc7700000878000022780000547a0000fe7a0000e67b0000ea7c0000847d00008c7e0000ee840000ae9a0000bc9a0000
+      m_ExpandedIDs: d899ffff4e9affffde9bffff469dffff1e9effff2a9effff449effff6ea7ffffd4abffffd2adffff58afffffceafffff5cb1ffffc4b2ffff9cb3ffff5eb4ffff80b4ffff9cbeffff96d1ffffc2d3ffffb4d5ffffb8ddffff0ee3ffff4ae3ffff40e7ffffaae7ffff40fbffff586600006e67000076670000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

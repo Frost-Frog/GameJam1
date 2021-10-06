@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - PauseMenu
     - PlayerController
     - Portal
+    - Reset
     - SettingsMenu
     - Timer
     - Win
@@ -440,6 +441,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6368}
     - Class: 114
       Script: {instanceID: 7862}
+    - Class: 114
+      Script: {instanceID: 37354}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -812,7 +815,7 @@ ScriptsOnlyBuild:
     className: CinemachineVirtualCamera
   - hash:
       serializedVersion: 2
-      Hash: 0114f079d337ca537361c5c8a5b1e40f
+      Hash: e92bde16bb375047810eb8b5c0cd228f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -1884,6 +1887,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Reset
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartMenu.unity
