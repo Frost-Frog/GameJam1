@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        
+        //e
     }
 
     // Update is called once per frame
@@ -42,15 +42,17 @@ public class PlayerController : MonoBehaviour
         }
         if(moveV < 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, moveV * 3);
+            rb.velocity = new Vector2(rb.velocity.x, moveV * 20);
         }
     }
     private bool IsGrounded()
     {
-        float extraheight = 0.01f;
-        RaycastHit2D raycast = Physics2D.Raycast(bc.bounds.center, Vector2.down, bc.bounds.extents.y + extraheight, playermask);
+        float extraheight = 0.05f;
+        RaycastHit2D raycast = Physics2D.Raycast((Vector2)bc.bounds.center, Vector2.down, bc.bounds.extents.y + extraheight, playermask);
+        RaycastHit2D raycast2 = Physics2D.Raycast((Vector2)bc.bounds.center + new Vector2(-0.4f,0), Vector2.down, bc.bounds.extents.y + extraheight, playermask);
+        RaycastHit2D raycast3 = Physics2D.Raycast((Vector2)bc.bounds.center + new Vector2(+0.4f,0), Vector2.down, bc.bounds.extents.y + extraheight, playermask);
         Color raycolor;
-        if(raycast.collider != null)
+        if(raycast.collider != null|| raycast3.collider != null || raycast3.collider != null)
         {
             raycolor = Color.green;
         }
@@ -58,7 +60,24 @@ public class PlayerController : MonoBehaviour
         {
             raycolor = Color.red;
         }
-        Debug.DrawRay(bc.bounds.center, Vector2.down * (bc.bounds.extents.y + extraheight), raycolor );
-        return raycast.collider != null;
+        Debug.DrawRay((Vector2)bc.bounds.center, Vector2.down * (bc.bounds.extents.y + extraheight), raycolor );
+        Debug.DrawRay((Vector2)bc.bounds.center + new Vector2(-0.4f,0), Vector2.down * (bc.bounds.extents.y + extraheight), raycolor );
+        Debug.DrawRay((Vector2)bc.bounds.center + new Vector2(+0.4f,0), Vector2.down * (bc.bounds.extents.y + extraheight), raycolor );
+        if(raycast)
+        {
+            return raycast.collider != null;
+        }
+        else if(raycast2)
+        {
+            return raycast2.collider != null;
+        }
+        else if(raycast3)
+        {
+            return raycast3.collider != null;
+        }
+        else
+        {
+            return raycast.collider != null;
+        }
     }
 }

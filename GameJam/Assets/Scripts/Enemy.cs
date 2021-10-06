@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public float increase;
     public float min;
     public float max;
     public float speed;
@@ -24,7 +25,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.PingPong(Time.time*speed,max-min)+min, transform.position.y, transform.position.z);
+        increase += 1f * Time.deltaTime;
+        transform.position = new Vector3(Mathf.PingPong(increase*speed,max-min)+min, transform.position.y, transform.position.z);
     }
 
     void OnCollisionEnter2D(Collision2D col)

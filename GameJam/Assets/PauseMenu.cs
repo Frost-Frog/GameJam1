@@ -53,8 +53,9 @@ public class PauseMenu : MonoBehaviour
             Destroy(GameObject.Find("Grid"));
         }
         Destroy(GameObject.Find("Scoretext"));
-        SceneManager.LoadScene("StartMenu");
         Time.timeScale = 1;
+        SceneManager.LoadSceneAsync("StartMenu");
+        
         
     }
 }
