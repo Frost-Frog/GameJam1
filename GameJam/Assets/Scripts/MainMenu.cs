@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void PlayAgain()
     {
         Time.timeScale = 1;
-        SceneManager.LoadSceneAsync("Level1");
+        SceneManager.LoadScene("Level1");
     }
 
    public void QuitGame()

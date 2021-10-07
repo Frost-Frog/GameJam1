@@ -20,13 +20,15 @@ public class CameraFollow : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         {
-            if(GameObject.Find("Grid") != null)
-        {
-            Destroy(GameObject.Find("Grid"));
-        }
+            // if(GameObject.Find("Grid") != null)
+            // {
+            // Destroy(GameObject.Find("Grid"));
+            // }
+            GameObject.Find("Grid3").GetComponent<Grid>().enabled = false;
             Destroy(GameObject.Find("Scoretext"));
             SceneManager.LoadScene("Level1");
             Time.timeScale = 1;
+            Destroy(GameObject.Find("Time"));
         }
     }
     void FixedUpdate()

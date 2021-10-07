@@ -48,13 +48,14 @@ public class PauseMenu : MonoBehaviour
     }
     public void main_menu()
     {
-        if(GameObject.Find("Grid") != null)
+        if(GameObject.Find("Grid3") != null)
         {
-            Destroy(GameObject.Find("Grid"));
+            GameObject.Find("Grid3").GetComponent<Grid>().enabled = false;
         }
         Destroy(GameObject.Find("Scoretext"));
         Time.timeScale = 1;
-        SceneManager.LoadSceneAsync("StartMenu");
+        Destroy(GameObject.Find("Time"));
+        SceneManager.LoadSceneAsync("StartMenuNo");
         
         
     }

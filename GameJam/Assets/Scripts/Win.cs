@@ -29,11 +29,17 @@ public class Win : MonoBehaviour
         {
             timer = GameObject.Find("Scoretext");
             scoretext = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
-            Parent.GetComponent<Grid>().enabled = false;
-            gameObject.GetComponent<TilemapRenderer>().enabled = false;
-            Tilemap.GetComponent<TilemapRenderer>().enabled = false;
+            if(GameObject.Find("Grid3") != null)
+            {
+                GameObject.Find("Grid3").GetComponent<Grid>().enabled = false;
+            }
+            if(GameObject.Find("Portal") != null)
+            {
+                GetComponent<TilemapRenderer>().enabled = false;
+                Tilemap.GetComponent<TilemapRenderer>().enabled = false;
+            }
             Time.timeScale = 0;
-            timer.SetActive(false);
+            Destroy(GameObject.Find("Time"));
             scoretext.text = "Time: " + timer.GetComponent<Timer>().scoretime;
         }
     }

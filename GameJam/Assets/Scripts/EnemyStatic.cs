@@ -9,6 +9,7 @@ public class EnemyStatic : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform;
+        startposition = player.position;
     }
 
     
